@@ -2,7 +2,7 @@ const textTime = document.getElementById("clock");
 const circleText = document.getElementById("circle-one");
 
 function makeCircles(){
-    for (let i = 0; i<1440; i + 90){
+    for (let i = 0; i<100; i + 90){
         let dateObj = new Date()
         let newDate = new Date(dateObj.getTime() + i*60000);
         let hh = newDate.getHours();
@@ -23,7 +23,6 @@ function makeCircles(){
          circleText.textContent += newTime;
     
     }
-}
  makeCircles();
 
  //function texto(){
