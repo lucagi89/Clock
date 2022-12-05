@@ -20,7 +20,7 @@ function makeCircles(){
          mm = (mm < 10) ? "0" + mm : mm;
          //ss = (ss < 10) ? "0" + ss : ss;
          let newTime =  `${hh}:${mm} ${session}`;
-         circleText.textContent += newTime;
+         circleText.textContent = newTime;
     
     }
  makeCircles();
