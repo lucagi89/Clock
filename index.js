@@ -4,7 +4,7 @@ const circleText = document.getElementById("circle-one");
 function makeCircles(){
     //for (let i = 0; i<100; i + 90){
         let dateObj = new Date()
-        let newDate = new Date(dateObj.getTime() + i*60000);
+        let newDate = new Date(dateObj.getTime() + 90*60000);
         let hh = newDate.getHours();
         let mm = newDate.getMinutes();
         //let ss = newDate.getSeconds();
@@ -16,8 +16,8 @@ function makeCircles(){
         //    session = "PM";
         // }
       
-         hh = (hh < 10) ? "0" + hh : hh;
-         mm = (mm < 10) ? "0" + mm : mm;
+         //hh = (hh < 10) ? "0" + hh : hh;
+         //mm = (mm < 10) ? "0" + mm : mm;
          //ss = (ss < 10) ? "0" + ss : ss;
          let newTime =  `${hh}:${mm} ${session}`;
          circleText.textContent = newTime;
