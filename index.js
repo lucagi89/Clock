@@ -2,19 +2,19 @@ const textTime = document.getElementById("clock");
 const circleText = document.getElementById("circle-one");
 
 function makeCircles(){
-    for (let i = 0; i<100; i + 90){
+    //for (let i = 0; i<100; i + 90){
         let dateObj = new Date()
         let newDate = new Date(dateObj.getTime() + i*60000);
         let hh = newDate.getHours();
         let mm = newDate.getMinutes();
         //let ss = newDate.getSeconds();
-        let session ="AM";
+        //let session ="AM";
         //if(hh == 0){
         //    hh = 12;
         //} else if(hh > 12){
         //    hh = hh - 12;
         //    session = "PM";
-         }//
+        // }
       
          hh = (hh < 10) ? "0" + hh : hh;
          mm = (mm < 10) ? "0" + mm : mm;
