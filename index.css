@@ -1,8 +1,29 @@
+
+*{
+    margin: 0;
+    text-align: center;
+}
+
+
 div{
     font-weight: 900;
-    font-size: 60px;
+    font-size: 20px;
 }
 
 button{
-    width:200px
+    display:block;
+
+    width:200px;
+    margin: 10px auto;
+}
+ul{
+    padding: 1px;
+}
+
+li{
+    display:block; 
+    list-style: none;
+    border-bottom: solid 1px;
+    width:300px;
+    margin: 10px auto;
 }
