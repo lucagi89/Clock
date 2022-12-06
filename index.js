@@ -8,13 +8,15 @@ let clockOption = true;
 formatBtn.addEventListener("click", function(){
   if(clockOption){
     clockOption = false;
-    opt();
+  
+    formatBtn.textContent="24 HOURS"
   }else{
     clockOption = true;
-    opt();
+    formatBtn.textContent="12 HOURS"
   }
+  counter();
 })
-function opt(){
+function counter(){
   numbers = [];
   let counter = 0;
   while (counter < 1440) {

@@ -3,7 +3,9 @@
     margin: 0;
     text-align: center;
 }
-
+body{
+    background-color: rgb(206, 246, 246);
+}
 
 div{
     font-weight: 900;
@@ -23,7 +25,12 @@ ul{
 li{
     display:block; 
     list-style: none;
-    border-bottom: solid 1px;
+    border-bottom: solid 5px;
+    border-radius: 50px;
     width:300px;
     margin: 10px auto;
+    background:linear-gradient(whitesmoke 50%, grey, black);
+    box-shadow: -4px 0px 5px black;
+
+    padding:5px;
 }
