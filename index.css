@@ -6,6 +6,11 @@
 body{
     background-color: rgb(206, 246, 246);
 }
+#whole{
+    max-width: 600px;
+    min-width: 600px;
+    margin: 0 auto;
+}
 
 div{
     font-weight: 900;
@@ -14,9 +19,31 @@ div{
 
 button{
     display:block;
-
-    width:200px;
+    width:250px;
     margin: 10px auto;
+    border:none;
+    height:80px;
+    font-size: 30px;
+    font-weight: 500;
+    border-radius: 20px 0px 20px 0px;
+    background:linear-gradient(whitesmoke 30%, grey, rgb(98, 100, 247));
+    box-shadow: -4px 0px 10px rgb(68, 95, 247);
+    transition: transform 0.2s;
+}
+button:hover{
+    transform: scale(1.1);
+}
+button:active{
+    transform: scale(1);
+}
+#current-time{
+    background-color: rgb(22, 21, 21);
+    color: rgb(255, 0, 0);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
 }
 ul{
     padding: 0;
@@ -43,19 +70,19 @@ li{
 
 }
 .cubes{
-    width: 205px;
+    width: 223px;
     height: 800px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    
+    justify-content: center;
 
 }
 .cube{
     width: 20px;
     height: 50px;
     border: solid 3px black;
-    margin: 8px 5px 0px 0px;
+    margin: 8px 0px 0px 0px;
     border-right: none;
     border-radius: 10px 0px 0px 10px;
 }

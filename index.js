@@ -6,14 +6,35 @@ let n = 60000;
 circles.innerHTML =`<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>`;
 let clockOption = true;
 
+let currentTime = document.getElementById("current-time")
+function clock(){
+  let time = new Date()
+  let hh = time.getHours()
+  let mm = time.getMinutes()
+  let ss = time.getSeconds()
+  if(hh<10){
+    hh = "0" + hh
+  }
+  if(mm<10){
+    mm = "0" + mm
+  }
+  if(ss<10){
+    ss = "0" + ss
+  }
+  currentTime.textContent = `${hh}:${mm}:${ss}`
+  
+}
+
+setInterval(clock, 1000);
+
 formatBtn.addEventListener("click", function(){
   if(clockOption){
     clockOption = false;
   
-    formatBtn.textContent="24 HOURS"
+    //formatBtn.textContent="24 HOURS"
   }else{
     clockOption = true;
-    formatBtn.textContent="12 HOURS"
+    //formatBtn.textContent="12 HOURS"
   }
   counter();
 })
