@@ -19,18 +19,54 @@ button{
     margin: 10px auto;
 }
 ul{
-    padding: 1px;
+    padding: 0;
+    width:150px;
 }
 
 li{
+    min-height: 25px;
     display:block; 
     list-style: none;
     border-bottom: solid 5px;
     border-radius: 50px;
-    width:300px;
+    width:150px;
     margin: 10px auto;
     background:linear-gradient(whitesmoke 50%, grey, black);
     box-shadow: -4px 0px 5px black;
 
     padding:5px;
+}
+
+.circle{
+    display: flex;
+    justify-content: start;
+
+}
+.cubes{
+    width: 205px;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+
+}
+.cube{
+    width: 20px;
+    height: 50px;
+    border: solid 3px black;
+    margin: 8px 5px 0px 0px;
+    border-right: none;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.description{
+    max-width: 160px;
+    min-width: 160px;
+    height: 50px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;;
 }

@@ -3,6 +3,7 @@ const circles = document.getElementById("circles")
 const formatBtn = document.getElementById("format-btn")
 let numbers = [];
 let n = 60000;
+circles.innerHTML =`<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>`;
 let clockOption = true;
 
 formatBtn.addEventListener("click", function(){
