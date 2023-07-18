@@ -111,30 +111,3 @@ li{
     border-radius: 10px;
 }
 
-#subscribe-panel{
-    position: relative;
-    position: fixed;
-    left:0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    background-color: rgb(169, 27, 27); 
-    width: 400px;
-    height:300px; 
-    border: 10px solid rgb(109, 112, 200);
-    border-radius: 10px; 
-}
-
-#subscribe-panel button{
-    width:20px;
-    height: 20px;
-    font-size: 10px;
-    border-radius: 0;
-    font-weight: 900;
-    background: black;
-    color: rgb(169, 27, 27); 
-    position: absolute;
-    
-
-}
